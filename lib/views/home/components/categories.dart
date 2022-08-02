@@ -20,12 +20,15 @@ class _CategoriesState extends State<Categories> {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: 25,
-      child: ListView.builder(
-        scrollDirection: Axis.horizontal,
-        itemCount: categories.length,
-        itemBuilder: (context, index) => textCategory(index),
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: kDefaultPaddin),
+      child: SizedBox(
+        height: 25,
+        child: ListView.builder(
+          scrollDirection: Axis.horizontal,
+          itemCount: categories.length,
+          itemBuilder: (context, index) => textCategory(index),
+        ),
       ),
     );
   }
