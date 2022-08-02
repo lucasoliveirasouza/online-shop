@@ -9,7 +9,15 @@ class Categories extends StatefulWidget {
 }
 
 class _CategoriesState extends State<Categories> {
-  List<String> categories = ["Hand bag", "Jewellery", "Footwear", "Dresses"];
+  List<String> categories = [
+    "Hand bag",
+    "Jewellery",
+    "Footwear",
+    "Dresses",
+  ];
+
+  int selectedIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -23,12 +31,33 @@ class _CategoriesState extends State<Categories> {
   }
 
   Widget textCategory(int index) {
-    return Padding(
-      padding: EdgeInsets.symmetric(horizontal: kDefaultPaddin),
-      child: Text(
-        categories[index],
-        style: ,
-      ),
+    return GestureDetector(
+      onTap: () {
+        setState(() {
+          selectedIndex = index;
+        });
+      },
+      child: Padding(
+          padding: EdgeInsets.symmetric(horizontal: kDefaultPaddin),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                categories[index],
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: selectedIndex == index ? kTextColor : kTextLightColor,
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(top: kDefaultPaddin / 4),
+                height: 2,,
+                width: 30,
+                color:
+                    selectedIndex == index ? Colors.black : Colors.transparent,
+              )
+            ],
+          )),
     );
   }
 }
