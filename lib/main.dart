@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:onlineshop/util/constants.dart';
 import 'views/home/home.dart';
 
 void main() {
@@ -16,7 +16,8 @@ class MyApp extends StatelessWidget {
       title: 'Online Shop',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        textTheme: Theme.of(context).textTheme.apply(bodyColor: kTextColor),
+        visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: HomeView(),
     );
