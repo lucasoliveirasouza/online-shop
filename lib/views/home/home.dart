@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:onlineshop/util/constants.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({Key? key}) : super(key: key);
@@ -17,7 +18,17 @@ class HomeView extends StatelessWidget {
         actions: [
           IconButton(
             onPressed: () {},
-            icon: SvgPicture.asset("assets/icons/search.svg"),
+            icon: SvgPicture.asset(
+              "assets/icons/search.svg",
+              color: kTextColor,
+            ),
+          ),
+          IconButton(
+            onPressed: () {},
+            icon: SvgPicture.asset(
+              "assets/icons/cart.svg",
+              color: kTextColor,
+            ),
           ),
         ],
       ),
