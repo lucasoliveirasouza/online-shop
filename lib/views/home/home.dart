@@ -30,6 +30,9 @@ class HomeView extends StatelessWidget {
               color: kTextColor,
             ),
           ),
+          SizedBox(
+            width: kDefaultPaddin / 2,
+          ),
         ],
       ),
     );
