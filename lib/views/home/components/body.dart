@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:onlineshop/util/constants.dart';
+import 'package:onlineshop/views/home/components/categories.dart';
 
 class Body extends StatelessWidget {
   const Body({Key? key}) : super(key: key);
@@ -18,6 +19,7 @@ class Body extends StatelessWidget {
                 .copyWith(fontWeight: FontWeight.bold),
           ),
         ),
+        Categories(),
       ],
     );
   }
