@@ -51,7 +51,7 @@ class _CategoriesState extends State<Categories> {
               ),
               Container(
                 margin: EdgeInsets.only(top: kDefaultPaddin / 4),
-                height: 2,,
+                height: 2,
                 width: 30,
                 color:
                     selectedIndex == index ? Colors.black : Colors.transparent,
