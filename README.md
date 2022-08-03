@@ -1,3 +1,3 @@
 # onlineshop
 
-Estudo de interface de uma loja online
+Estudo de interface de uma loja online.
