@@ -27,6 +27,7 @@ class Body extends StatelessWidget {
           width: 160,
           decoration: BoxDecoration(
             color: products[0].color,
+            borderRadius: BorderRadius.circular(16),
           ),
         ),
       ],
