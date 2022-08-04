@@ -4,7 +4,7 @@ import 'package:onlineshop/util/constants.dart';
 
 class ItemCard extends StatelessWidget {
   final Product product;
-  final VoidCallback press;
+  VoidCallback press;
   ItemCard({Key? key, required this.product, required this.press}) : super(key: key);
 
   @override
