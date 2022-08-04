@@ -30,7 +30,19 @@ class Body extends StatelessWidget {
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal: kDefaultPaddin),
                   child: Column(
-                    children: [Text("Aristocratic Hand Bag")],
+                    children: [
+                      Text(
+                        "Aristocratic Hand Bag",
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+                      Text(
+                        "Office code",
+                        style: Theme.of(context).textTheme.headline4?.copyWith(
+                            color: Colors.white, fontWeight: FontWeight.bold),
+                      )
+                    ],
                   ),
                 ),
               ],
