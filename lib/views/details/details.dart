@@ -9,7 +9,10 @@ class DetailsView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: product.color,
-      appBar: AppBar(),
+      appBar: AppBar(
+        backgroundColor: product.color,
+        elevation: 0,
+      ),
     );
   }
 }
