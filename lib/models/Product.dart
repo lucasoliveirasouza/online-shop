@@ -34,7 +34,7 @@ List<Product> products = [
       color: Color(0xFFD3A984)),
   Product(
       id: 3,
-      title: "Hang Top",
+      title: "Hang To p",
       price: 299,
       size: 10,
       description: dummyText,
