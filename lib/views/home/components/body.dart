@@ -23,6 +23,7 @@ class Body extends StatelessWidget {
         ),
         Categories(),
         Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
               padding: EdgeInsets.all(kDefaultPaddin),
@@ -34,12 +35,21 @@ class Body extends StatelessWidget {
               ),
               child: Image.asset(products[0].image),
             ),
-            Text(
-              products[0].title,
-              style: TextStyle(
-                color: kTextLightColor,
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: kDefaultPaddin/4),
+              child: Text(
+                products[0].title,
+                style: TextStyle(
+                  color: kTextLightColor,
+                ),
               ),
             ),
+            Text(
+              "\$234",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+              ),
+            )
           ],
         )
       ],
