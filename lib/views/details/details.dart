@@ -4,8 +4,8 @@ import 'package:onlineshop/models/Product.dart';
 import 'package:onlineshop/util/constants.dart';
 
 class DetailsView extends StatelessWidget {
-   Product product;
-   DetailsView({ Key? key , required this.product}) : super(key: key);
+  Product product;
+  DetailsView({Key? key, required this.product}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,10 @@ class DetailsView extends StatelessWidget {
         backgroundColor: product.color,
         elevation: 0,
         leading: IconButton(
-          icon: SvgPicture.asset("assets/icons/back.svg",color: Colors.white,),
+          icon: SvgPicture.asset(
+            "assets/icons/back.svg",
+            color: Colors.white,
+          ),
           onPressed: () {},
         ),
         actions: [
