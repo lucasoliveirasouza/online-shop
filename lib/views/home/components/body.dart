@@ -22,16 +22,26 @@ class Body extends StatelessWidget {
           ),
         ),
         Categories(),
-        Container(
-          padding: EdgeInsets.all(kDefaultPaddin),
-          height: 180,
-          width: 160,
-          decoration: BoxDecoration(
-            color: products[0].color,
-            borderRadius: BorderRadius.circular(16),
-          ),
-          child: Image.asset(products[0].image),
-        ),
+        Column(
+          children: [
+            Container(
+              padding: EdgeInsets.all(kDefaultPaddin),
+              height: 180,
+              width: 160,
+              decoration: BoxDecoration(
+                color: products[0].color,
+                borderRadius: BorderRadius.circular(16),
+              ),
+              child: Image.asset(products[0].image),
+            ),
+            Text(
+              products[0].title,
+              style: TextStyle(
+                color: kTextLightColor,
+              ),
+            ),
+          ],
+        )
       ],
     );
   }
