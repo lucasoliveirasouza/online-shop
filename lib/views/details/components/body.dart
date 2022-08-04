@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:onlineshop/models/Product.dart';
+import 'package:onlineshop/util/constants.dart';
 
 class Body extends StatelessWidget {
   Product product;
@@ -25,7 +26,13 @@ class Body extends StatelessWidget {
                       topRight: Radius.circular(24),
                     ),
                   ),
-                )
+                ),
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: kDefaultPaddin),
+                  child: Column(
+                    children: [Text("Aristocratic Hand Bag")],
+                  ),
+                ),
               ],
             ),
           ),
