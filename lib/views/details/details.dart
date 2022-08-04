@@ -12,38 +12,42 @@ class DetailsView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: product.color,
-      appBar: AppBar(
-        backgroundColor: product.color,
-        elevation: 0,
-        leading: IconButton(
+      appBar: appBar(context),
+    );
+  }
+
+  AppBar appBar(BuildContext context) {
+    return AppBar(
+      backgroundColor: product.color,
+      elevation: 0,
+      leading: IconButton(
+        icon: SvgPicture.asset(
+          "assets/icons/back.svg",
+          color: Colors.white,
+        ),
+        onPressed: () {
+          Get.back();
+        },
+      ),
+      actions: [
+        IconButton(
+          onPressed: () {},
           icon: SvgPicture.asset(
-            "assets/icons/back.svg",
+            "assets/icons/search.svg",
             color: Colors.white,
           ),
-          onPressed: () {
-            Get.back();
-          },
         ),
-        actions: [
-          IconButton(
-            onPressed: () {},
-            icon: SvgPicture.asset(
-              "assets/icons/search.svg",
-              color: Colors.white,
-            ),
+        IconButton(
+          onPressed: () {},
+          icon: SvgPicture.asset(
+            "assets/icons/cart.svg",
+            color: Colors.white,
           ),
-          IconButton(
-            onPressed: () {},
-            icon: SvgPicture.asset(
-              "assets/icons/cart.svg",
-              color: Colors.white,
-            ),
-          ),
-          SizedBox(
-            width: kDefaultPaddin / 2,
-          ),
-        ],
-      ),
+        ),
+        SizedBox(
+          width: kDefaultPaddin / 2,
+        ),
+      ],
     );
   }
 }
