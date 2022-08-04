@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:get/get.dart';
 import 'package:onlineshop/models/Product.dart';
 import 'package:onlineshop/util/constants.dart';
 
@@ -19,7 +20,9 @@ class DetailsView extends StatelessWidget {
             "assets/icons/back.svg",
             color: Colors.white,
           ),
-          onPressed: () {},
+          onPressed: () {
+            Get.back();
+          },
         ),
         actions: [
           IconButton(
@@ -33,7 +36,7 @@ class DetailsView extends StatelessWidget {
             onPressed: () {},
             icon: SvgPicture.asset(
               "assets/icons/cart.svg",
-              color: kTextColor,
+              color: Colors.white,
             ),
           ),
           SizedBox(
