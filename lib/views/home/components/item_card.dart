@@ -16,15 +16,15 @@ class ItemCard extends StatelessWidget {
           padding: EdgeInsets.all(kDefaultPaddin),
 
           decoration: BoxDecoration(
-            color: products[0].color,
+            color: product.color,
             borderRadius: BorderRadius.circular(16),
           ),
-          child: Image.asset(products[0].image),
+          child: Image.asset(product.image),
         ),
         Padding(
           padding: const EdgeInsets.symmetric(vertical: kDefaultPaddin/4),
           child: Text(
-            products[0].title,
+            product.title,
             style: TextStyle(
               color: kTextLightColor,
             ),
