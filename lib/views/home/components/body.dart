@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:onlineshop/models/Product.dart';
 import 'package:onlineshop/util/constants.dart';
+import 'package:onlineshop/views/details/details.dart';
 import 'package:onlineshop/views/home/components/categories.dart';
 import 'package:onlineshop/views/home/components/item_card.dart';
 
@@ -37,7 +39,9 @@ class Body extends StatelessWidget {
                   childAspectRatio: 0.75,
                 ),
                 itemBuilder: (context, index) => ItemCard(
-                  press: () {},
+                  press: () {
+                    Get.to(() => DetailsView(product: products[index]));
+                  },
                   product: products[index],
                 ),
               ),
