@@ -24,14 +24,18 @@ class Body extends StatelessWidget {
         ),
         Categories(),
         Expanded(
-            child: GridView.builder(
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 2,
-                ),
-                itemBuilder: (context,index) => ItemCard(
-                  press: (){},
-                  product: products[0],
-                ),),),
+          child: GridView.builder(
+            itemCount: products.length,
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 2,
+              childAspectRatio: 0.75,
+            ),
+            itemBuilder: (context, index) => ItemCard(
+              press: () {},
+              product: products[0],
+            ),
+          ),
+        ),
       ],
     );
   }
