@@ -26,7 +26,7 @@ class DetailsView extends StatelessWidget {
             onPressed: () {},
             icon: SvgPicture.asset(
               "assets/icons/search.svg",
-              color: kTextColor,
+              color: Colors.white,
             ),
           ),
           IconButton(
