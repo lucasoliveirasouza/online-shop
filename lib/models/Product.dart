@@ -40,14 +40,7 @@ List<Product> products = [
       description: dummyText,
       image: "assets/images/bag_3.png",
       color: Color(0xFF989493)),
-  Product(
-      id: 4,
-      title: "Old Fashion",
-      price: 218,
-      size: 11,
-      description: dummyText,
-      image: "assets/images/bag_4.png",
-      color: Color(0xFFE6B398)),
+
   Product(
       id: 5,
       title: "Office Code",
@@ -56,6 +49,14 @@ List<Product> products = [
       description: dummyText,
       image: "assets/images/bag_5.png",
       color: Color(0xFFFB7883)),
+  Product(
+      id: 4,
+      title: "Old Fashion",
+      price: 218,
+      size: 11,
+      description: dummyText,
+      image: "assets/images/bag_4.png",
+      color: Color(0xFFE6B398)),
   Product(
     id: 6,
     title: "Office Code",
