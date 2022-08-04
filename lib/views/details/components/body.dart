@@ -10,7 +10,14 @@ class Body extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     return SingleChildScrollView(
       child: Column(
-        children: [],
+        children: [
+          SizedBox(
+            height: size.height,
+            child: Stack(
+              children: [],
+            ),
+          ),
+        ],
       ),
     );
   }
