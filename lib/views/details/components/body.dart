@@ -61,6 +61,10 @@ class Body extends StatelessWidget {
                               ],
                             ),
                           ),
+                          SizedBox(width: kDefaultPaddin),
+                          Expanded(
+                            child: Image.asset(product.image),
+                          )
                         ],
                       ),
                     ],
