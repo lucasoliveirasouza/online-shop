@@ -37,7 +37,10 @@ class Body extends StatelessWidget {
                       Row(
                         children: [
                           Column(
-                            children: [Text("Teste")],
+                            children: [
+                              Text("Color"),
+                              Container(),
+                            ],
                           )
                         ],
                       )
