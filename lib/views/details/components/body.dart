@@ -26,6 +26,9 @@ class Body extends StatelessWidget {
                       topRight: Radius.circular(24),
                     ),
                   ),
+                  child: Column(
+                    children: [],
+                  ),
                 ),
                 ProductTitleWithImage(product: product),
               ],
