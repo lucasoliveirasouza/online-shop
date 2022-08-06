@@ -51,6 +51,7 @@ class Body extends StatelessWidget {
                                 child: DecoratedBox(
                                   decoration: BoxDecoration(
                                     color: Color(0xFF356C95),
+                                    shape: BoxShape.circle,
                                   ),
                                 ),
                               ),
