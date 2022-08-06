@@ -20,7 +20,7 @@ class Body extends StatelessWidget {
                 Container(
                   margin: EdgeInsets.only(top: size.height * 0.3),
                   padding: EdgeInsets.only(
-                    top: size.height * 0.1,
+                    top: size.height * 0.15,
                     left: kDefaultPaddin,
                     right: kDefaultPaddin,
                   ),
