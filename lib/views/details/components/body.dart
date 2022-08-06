@@ -48,6 +48,11 @@ class Body extends StatelessWidget {
                                     color: Color(0xFF356C95),
                                   ),
                                 ),
+                                child: DecoratedBox(
+                                  decoration: BoxDecoration(
+                                    color: Color(0xFF356C95),
+                                  ),
+                                ),
                               ),
                             ],
                           )
