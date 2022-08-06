@@ -18,6 +18,7 @@ class Body extends StatelessWidget {
               children: [
                 Container(
                   margin: EdgeInsets.only(top: size.height * 0.3),
+                  padding: EdgeInsets.only(),
                   height: 500,
                   decoration: BoxDecoration(
                     color: Colors.white,
@@ -27,7 +28,15 @@ class Body extends StatelessWidget {
                     ),
                   ),
                   child: Column(
-                    children: [],
+                    children: [
+                      Row(
+                        children: [
+                          Column(
+                            children: [Text("Teste")],
+                          )
+                        ],
+                      )
+                    ],
                   ),
                 ),
                 ProductTitleWithImage(product: product),
