@@ -40,6 +40,7 @@ class Body extends StatelessWidget {
                             children: [
                               Text("Color"),
                               Container(
+                                margin: EdgeInsets.only(),
                                 padding: EdgeInsets.all(2.5),
                                 height: 24,
                                 width: 24,
