@@ -22,6 +22,7 @@ class Body extends StatelessWidget {
                   padding: EdgeInsets.only(
                     top: size.height * 0.1,
                     left: kDefaultPaddin,
+                    right: kDefaultPaddin,
                   ),
                   height: 500,
                   decoration: BoxDecoration(
