@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:onlineshop/models/Product.dart';
+import 'package:onlineshop/util/constants.dart';
 import 'package:onlineshop/views/details/components/product_title_with_image.dart';
 
 class Body extends StatelessWidget {
@@ -18,7 +19,10 @@ class Body extends StatelessWidget {
               children: [
                 Container(
                   margin: EdgeInsets.only(top: size.height * 0.3),
-                  padding: EdgeInsets.only(),
+                  padding: EdgeInsets.only(
+                    top: size.height * 0.1,
+                    left: kDefaultPaddin,
+                  ),
                   height: 500,
                   decoration: BoxDecoration(
                     color: Colors.white,
