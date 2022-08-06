@@ -42,6 +42,12 @@ class Body extends StatelessWidget {
                               Container(
                                 height: 24,
                                 width: 24,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  border: Border.all(
+                                    color: Color(0xFF356C95),
+                                  ),
+                                ),
                               ),
                             ],
                           )
