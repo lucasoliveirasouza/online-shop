@@ -50,6 +50,7 @@ class Body extends StatelessWidget {
                       ),
                       SizedBox(height: kDefaultPaddin / 2),
                       CounterWithFavBtn(),
+                      SizedBox(height: kDefaultPaddin / 2),
                       AddToCart(),
                     ],
                   ),
