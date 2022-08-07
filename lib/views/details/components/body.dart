@@ -54,7 +54,16 @@ class Body extends StatelessWidget {
                             ],
                           ),
                           RichText(
-                            text: TextSpan(children: []),
+                            text: TextSpan(
+                              style: TextStyle(
+                                color: kTextColor,
+                              ),
+                              children: [
+                                TextSpan(
+                                  text: "Size",
+                                ),
+                              ],
+                            ),
                           )
                         ],
                       ),
