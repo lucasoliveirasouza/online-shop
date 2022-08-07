@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:onlineshop/models/Product.dart';
 import 'package:onlineshop/util/constants.dart';
-import 'package:onlineshop/views/details/components/color_dot.dart';
+import 'package:onlineshop/views/details/components/color_and_size.dart';
 import 'package:onlineshop/views/details/components/product_title_with_image.dart';
 
 class Body extends StatelessWidget {
@@ -35,38 +35,18 @@ class Body extends StatelessWidget {
                   ),
                   child: Column(
                     children: [
-                      Row(
-                        children: [
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text("Color"),
-                              Row(
-                                children: [
-                                  ColorDot(
-                                    color: Color(0xFF356C95),
-                                    isSelected: true,
-                                  ),
-                                  ColorDot(color: Color(0xFFF8C078)),
-                                  ColorDot(color: Color(0xFFA29B9B)),
-                                ],
-                              ),
-                            ],
+                      ColorAndSize(product: (product)),
+                      SizedBox(height: kDefaultPaddin / 2),
+                      Padding(
+                        padding: EdgeInsets.symmetric(vertical: kDefaultPaddin),
+                        child: Text(
+                          product.description,
+                          style: TextStyle(
+                            height: 1.5,
                           ),
-                          RichText(
-                            text: TextSpan(
-                              style: TextStyle(
-                                color: kTextColor,
-                              ),
-                              children: [
-                                TextSpan(
-                                  text: "Size",
-                                ),
-                              ],
-                            ),
-                          )
-                        ],
+                        ),
                       ),
+                      SizedBox(height: kDefaultPaddin / 2),
                     ],
                   ),
                 ),
