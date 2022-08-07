@@ -1,3 +1,3 @@
 # onlineshop
 
-Estudo para produzir uma interface de uma loja online.
+Estudo para produzir uma interface de uma loja online utilizando Flutter.
