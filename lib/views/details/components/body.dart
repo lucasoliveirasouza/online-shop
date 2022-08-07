@@ -38,6 +38,7 @@ class Body extends StatelessWidget {
                       Row(
                         children: [
                           Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text("Color"),
                               Row(
@@ -49,11 +50,14 @@ class Body extends StatelessWidget {
                                   ColorDot(color: Color(0xFFF8C078)),
                                   ColorDot(color: Color(0xFFA29B9B)),
                                 ],
-                              )
+                              ),
                             ],
+                          ),
+                          RichText(
+                            text: TextSpan(children: []),
                           )
                         ],
-                      )
+                      ),
                     ],
                   ),
                 ),
