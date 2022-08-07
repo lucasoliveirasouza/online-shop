@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:onlineshop/models/Product.dart';
 import 'package:onlineshop/util/constants.dart';
 import 'package:onlineshop/views/details/components/color_and_size.dart';
+import 'package:onlineshop/views/details/components/counter_with_fav_btn.dart';
 import 'package:onlineshop/views/details/components/product_title_with_image.dart';
 
 class Body extends StatelessWidget {
@@ -36,9 +37,9 @@ class Body extends StatelessWidget {
                   child: Column(
                     children: [
                       ColorAndSize(product: (product)),
-                      SizedBox(height: kDefaultPaddin / 2),
                       Padding(
-                        padding: EdgeInsets.symmetric(vertical: kDefaultPaddin),
+                        padding:
+                            EdgeInsets.symmetric(vertical: kDefaultPaddin / 2),
                         child: Text(
                           product.description,
                           style: TextStyle(
@@ -47,6 +48,7 @@ class Body extends StatelessWidget {
                         ),
                       ),
                       SizedBox(height: kDefaultPaddin / 2),
+                      CounterWithFavBtn(),
                     ],
                   ),
                 ),
