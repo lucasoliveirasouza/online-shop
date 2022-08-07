@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:onlineshop/models/Product.dart';
+import 'package:onlineshop/util/constants.dart';
 
 class AddToCart extends StatelessWidget {
   final Product product;
@@ -7,6 +8,8 @@ class AddToCart extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Padding(
+      padding: EdgeInsets.symmetric(vertical: kDefaultPaddin),
+    );
   }
 }
