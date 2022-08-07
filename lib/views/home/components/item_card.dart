@@ -5,7 +5,8 @@ import 'package:onlineshop/util/constants.dart';
 class ItemCard extends StatelessWidget {
   final Product product;
   VoidCallback press;
-  ItemCard({Key? key, required this.product, required this.press}) : super(key: key);
+  ItemCard({Key? key, required this.product, required this.press})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -17,16 +18,18 @@ class ItemCard extends StatelessWidget {
           Expanded(
             child: Container(
               padding: EdgeInsets.all(kDefaultPaddin),
-
               decoration: BoxDecoration(
                 color: product.color,
                 borderRadius: BorderRadius.circular(16),
               ),
-              child: Image.asset(product.image),
+              child: Hero(
+                tag: "${product.id}",
+                child: Image.asset(product.image),
+              ),
             ),
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: kDefaultPaddin/4),
+            padding: const EdgeInsets.symmetric(vertical: kDefaultPaddin / 4),
             child: Text(
               product.title,
               style: TextStyle(
