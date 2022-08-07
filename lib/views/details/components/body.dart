@@ -39,8 +39,7 @@ class Body extends StatelessWidget {
                     children: [
                       ColorAndSize(product: (product)),
                       Padding(
-                        padding:
-                            EdgeInsets.symmetric(vertical: kDefaultPaddin / 2),
+                        padding: EdgeInsets.symmetric(vertical: kDefaultPaddin),
                         child: Text(
                           product.description,
                           style: TextStyle(
@@ -48,9 +47,9 @@ class Body extends StatelessWidget {
                           ),
                         ),
                       ),
-                      SizedBox(height: kDefaultPaddin / 2),
+                      SizedBox(height: kDefaultPaddin),
                       CounterWithFavBtn(),
-                      SizedBox(height: kDefaultPaddin / 2),
+                      SizedBox(height: kDefaultPaddin),
                       AddToCart(
                         product: product,
                       ),
