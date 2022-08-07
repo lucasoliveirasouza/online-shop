@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:onlineshop/models/Product.dart';
 import 'package:onlineshop/util/constants.dart';
+import 'package:onlineshop/views/details/components/color_dot.dart';
 import 'package:onlineshop/views/details/components/product_title_with_image.dart';
 
 class Body extends StatelessWidget {
@@ -39,6 +40,16 @@ class Body extends StatelessWidget {
                           Column(
                             children: [
                               Text("Color"),
+                              Row(
+                                children: [
+                                  ColorDot(
+                                    color: Color(0xFF356C95),
+                                    isSelected: true,
+                                  ),
+                                  ColorDot(color: Color(0xFFF8C078)),
+                                  ColorDot(color: Color(0xFFA29B9B)),
+                                ],
+                              )
                             ],
                           )
                         ],

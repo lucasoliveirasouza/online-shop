@@ -3,11 +3,11 @@ import 'package:onlineshop/util/constants.dart';
 
 class ColorDot extends StatelessWidget {
   final Color color;
-  final bool isSelect;
+  final bool isSelected;
   ColorDot({
     Key? key,
     required this.color,
-    this.isSelect = false,
+    this.isSelected = false,
   }) : super(key: key);
 
   @override
