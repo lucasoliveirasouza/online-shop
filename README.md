@@ -16,3 +16,6 @@
 Estudo para produzir uma interface de uma loja online utilizando Flutter.
 
 #### O Aplicativo:
+
+<img src="https://user-images.githubusercontent.com/26170686/183499921-6bc34f83-82d0-48bb-9b42-12aa95c73df9.gif" height="250"/>
+
