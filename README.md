@@ -13,9 +13,8 @@
 <img align="center" title="Dart" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dart/dart-original.svg">  <img align="center" title="Flutter" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/flutter/flutter-original.svg">
 
 #### Descrição:
-Estudo para produzir uma interface de uma loja online utilizando Flutter.
+Estudo para produzir uma interface de uma loja online utilizando Flutter
 
 #### O Aplicativo:
 
 <img src="https://user-images.githubusercontent.com/26170686/183499921-6bc34f83-82d0-48bb-9b42-12aa95c73df9.gif" height="250"/>
-
